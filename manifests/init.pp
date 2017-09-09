@@ -3,6 +3,6 @@
 #
 class python {
   # default values are in python/functions/data.pp
-  class { '::nginx::install': }
+  class { '::python::install': }
 }
 
