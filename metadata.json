@@ -1,0 +1,15 @@
+{
+  "name": "cfalck-python",
+  "version": "0.1.0",
+  "author": "cfalck (chris.falck@tickboxconsulting.com)",
+  "summary": "A module to manage Python",
+  "license": "Apache-2.0",
+  "source": "git@github.com:tickbox-smc/puppet-python.git",
+  "project_page": "https://github.com/tickbox-smc/puppet-python",
+  "issues_url": "https://github.com/tickbox-smc/puppet-python/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
