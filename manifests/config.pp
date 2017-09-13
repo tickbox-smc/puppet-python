@@ -1,13 +1,12 @@
 class python::config (
-  String $ensure       = $::python::ensure,
-  String $package_name = $::python::package_name,
+  String $link_ensure       = $::python::link_ensure,
+  String $python_name       = $::python::python_name,
+  String $local_python_name = $::python::local_python_name,
+  String $local_bin         = $::python::local_bin,
+  String $install_bin       = $::python::install_bin,
 ){
-  package { 'install_python':
-    ensure => $ensure,
-    name   => $package_name,
-  }
-  file { '/tmp/link-to-motd':
-    ensure => 'link',
-    target => '/etc/motd',
+  file { $local_bin + $local_python_name:
+    ensure => $link_ensure,
+    target => $install_bin + $python_name,
   }
 }

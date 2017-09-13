@@ -7,10 +7,11 @@ function python::data {
   }
 
   $link_params = {
-    'python::link_ensure'  => 'link',
-    'python::python_name'  => 'python3.6',
-    'python::local_bin'    => '/usr/local/bin/',
-    'python::install_bin'  => '/usr/bin/',
+    'python::link_ensure'        => 'link',
+    'python::python_name'        => 'python3.6',
+    'python::local_python_name'  => 'python',
+    'python::local_bin'          => '/usr/local/bin/',
+    'python::install_bin'        => '/usr/bin/',
   }
 
   # Merge the hashes and return a single hash.
