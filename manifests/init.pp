@@ -8,6 +8,6 @@ class python (
 ){
   # default values are in python/functions/data.pp
   class { '::python::install': }
-  -> class {'::python::config'}
+  -> class { '::python::config': }
 }
 
