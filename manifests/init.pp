@@ -6,7 +6,7 @@ class python (
   String $ensure,
   String $package_name,
   String $link_ensure,
-  String $phyton_name,
+  String $python_name,
   String $local_python_name,
   String $local_bin,
   String $install_bin,
