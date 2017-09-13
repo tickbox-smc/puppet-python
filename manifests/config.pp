@@ -5,8 +5,8 @@ class python::config (
   String $local_bin         = $::python::local_bin,
   String $install_bin       = $::python::install_bin,
 ){
-  file { $local_bin + $local_python_name:
+  file { "${local_bin}${local_python_name}":
     ensure => $link_ensure,
-    target => $install_bin + $python_name,
+    target => "${install_bin}${python_name}",
   }
 }
